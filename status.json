@@ -5,10 +5,10 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:50:09+08:00",
+ "updated_at": "2026-10-13T15:51:02+08:00",
  "chunk_minutes": 0.17,
- "chunks": 2,
- "engine": "Gemini gemini-3.1-flash-lite",
+ "chunks": 4,
+ "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
   {
    "n": 1,
@@ -19,9 +19,20 @@
    "n": 2,
    "time": "15:50",
    "excerpt": "美國跟胡塞交戰也十幾年了。"
+  },
+  {
+   "n": 3,
+   "time": "15:51:02",
+   "excerpt": "胡賽越打越強大，也就是說，胡賽雖然佔的國土面積不大，大概是葉門的不到三分之一，可…"
+  },
+  {
+   "n": 4,
+   "time": "15:51:02",
+   "excerpt": "占 70% 左右。"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
- "chunk_seconds": 10
+ "chunk_seconds": 10,
+ "lag_seconds": 92
 }
