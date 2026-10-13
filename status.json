@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:54:52+08:00",
+ "updated_at": "2026-10-13T15:55:04+08:00",
  "chunk_minutes": 0.17,
- "chunks": 36,
+ "chunks": 37,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
-  {
-   "n": 32,
-   "time": "15:54:12",
-   "excerpt": "就是結婚的移民嘛，裡面裡面打各式各樣的這個事情，那麼當中的話裡面少不了就是說懷疑…"
-  },
   {
    "n": 33,
    "time": "15:54:22",
@@ -34,10 +29,15 @@
    "n": 36,
    "time": "15:54:52",
    "excerpt": "九月下學的時候，他突然從他的老巢裡面大舉發動攻勢，攻打葉門政府軍，那這一下子打到…"
+  },
+  {
+   "n": 37,
+   "time": "15:55:04",
+   "excerpt": "的曼德海峽受害口，還打造一個港口叫做摩卡港，那這兩個地方就完全可以控制曼德海峽，…"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 2
+ "lag_seconds": 4
 }
