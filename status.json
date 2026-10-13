@@ -5,11 +5,17 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:35:06+08:00",
- "updated_at": "2026-10-13T15:35:06+08:00",
+ "updated_at": "2026-10-13T15:35:19+08:00",
  "chunk_minutes": 2,
- "chunks": 0,
- "engine": "",
- "segments": [],
+ "chunks": 1,
+ "engine": "Gemini gemini-flash-latest",
+ "segments": [
+  {
+   "n": 1,
+   "time": "15:35",
+   "excerpt": "今天是國民政府還都南京的一天。"
+  }
+ ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始"
 }
