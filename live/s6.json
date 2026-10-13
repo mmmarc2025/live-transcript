@@ -1,0 +1,43 @@
+{
+ "session_id": "20261013-154857",
+ "title": "🔴LIVE：2026.10.13 新聞大白話【14:00全球開播】 2026-10-13 15:48",
+ "url": "https://www.youtube.com/live/AG_E_I-mFpk",
+ "public_excerpt_only": true,
+ "status": "錄製中",
+ "started_at": "2026-10-13T15:48:58+08:00",
+ "updated_at": "2026-10-13T16:01:03+08:00",
+ "chunk_minutes": 0.17,
+ "chunks": 73,
+ "engine": "Gemini gemini-3.5-flash-lite",
+ "segments": [
+  {
+   "n": 59,
+   "time": "15:58:43",
+   "excerpt": "講話。"
+  },
+  {
+   "n": 70,
+   "time": "16:00:33",
+   "excerpt": "餵你好，歡迎收看新聞大白話，我是韋家齊。"
+  },
+  {
+   "n": 71,
+   "time": "16:00:43",
+   "excerpt": "在討論國內的政治焦點，加入我們的雷賓，包括資深媒體人韓碧寒，韓碧寒午安。"
+  },
+  {
+   "n": 72,
+   "time": "16:00:53",
+   "excerpt": "大家好。"
+  },
+  {
+   "n": 73,
+   "time": "16:01:03",
+   "excerpt": "多的殺人事件，但是這一起呢更令人驚悚，因為他殺人了之後居然還縱火想要來毀屍滅跡。"
+  }
+ ],
+ "press_release": "尚未開始",
+ "social_posts": "尚未開始",
+ "chunk_seconds": 10,
+ "lag_seconds": 3
+}
