@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>直播逐字稿狀態</title><style>
+body{font-family:-apple-system,"PingFang TC","Noto Sans TC",sans-serif;margin:0;background:#f4f5f7;color:#222}
+main{max-width:720px;margin:auto;padding:16px}.card{background:#fff;border-radius:12px;padding:16px;margin-bottom:12px;box-shadow:0 1px 3px #0001}
+h1{font-size:20px;margin:4px 0 12px}.badge{display:inline-block;padding:3px 10px;border-radius:99px;font-weight:600;color:#fff}
+.rec{background:#d93025;animation:p 1.5s infinite}.end{background:#666}@keyframes p{50%{opacity:.5}}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.k{color:#777;font-size:13px}.v{font-size:18px;font-weight:600}
+.seg{border-left:3px solid #1a73e8;padding:4px 10px;margin:10px 0}.seg small{color:#777}.note{font-size:12px;color:#888}
+a{color:#1a73e8;word-break:break-all}</style></head><body><main>
+<h1>📡 直播逐字稿狀態</h1><div class="card"><div id="st"></div><h2 id="title" style="font-size:16px"></h2><a id="url"></a></div>
+<div class="card grid"><div><div class="k">已錄製</div><div class="v" id="el">–</div></div><div><div class="k">已完成段數</div><div class="v" id="ch">–</div></div>
+<div><div class="k">最後更新（台北時間）</div><div class="v" id="up">–</div></div><div><div class="k">辨識引擎</div><div class="v" id="en" style="font-size:14px">–</div></div></div>
+<div class="card grid"><div><div class="k">新聞稿</div><div class="v" id="pr">–</div></div><div><div class="k">社群貼文</div><div class="v" id="sp">–</div></div></div>
+<div class="card"><b>最新逐字稿</b><div id="mode" class="note"></div><div id="segs"></div></div>
+<p class="note">每 30 秒自動更新</p></main><script>
+let S;const tp=d=>new Date(d).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false});
+function el(){if(!S)return;const a=new Date(S.started_at),b=S.ended_at?new Date(S.ended_at):new Date();const m=Math.floor((b-a)/60000);
+document.getElementById('el').textContent=(m>=60?Math.floor(m/60)+' 小時 ':'')+(m%60)+' 分';}
+async function load(){try{S=await (await fetch('status.json?t='+Date.now())).json();}catch(e){return}
+const r=S.status==='錄製中';document.getElementById('st').innerHTML=`<span class="badge ${r?'rec':'end'}">${r?'● ':''}${S.status}</span>`;
+title.textContent=S.title||'';url.textContent=S.url;url.href=S.url;ch.textContent=S.chunks+' 段（每段約 '+S.chunk_minutes+' 分）';
+up.textContent=tp(S.updated_at);en.textContent=S.engine||'–';pr.textContent=S.press_release;sp.textContent=S.social_posts;
+mode.textContent=S.public_excerpt_only?'公開頁僅顯示每段摘錄，完整逐字稿保存在錄製端。':'';
+segs.innerHTML=S.segments.slice().reverse().map(s=>`<div class="seg"><small>第 ${s.n} 段・${s.time}</small><div>${(s.text||s.excerpt).replace(/</g,'&lt;').replace(/\n/g,'<br>')}</div></div>`).join('')||'<p class="note">等待第一段…</p>';el();}
+load();setInterval(load,30000);setInterval(el,10000);</script></body></html>
