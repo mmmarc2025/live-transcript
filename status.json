@@ -5,15 +5,20 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:49:38+08:00",
+ "updated_at": "2026-10-13T15:50:09+08:00",
  "chunk_minutes": 0,
- "chunks": 1,
+ "chunks": 2,
  "engine": "Gemini gemini-3.1-flash-lite",
  "segments": [
   {
    "n": 1,
    "time": "15:49",
    "excerpt": "內。"
+  },
+  {
+   "n": 2,
+   "time": "15:50",
+   "excerpt": "美國跟胡塞交戰也十幾年了。"
   }
  ],
  "press_release": "尚未開始",
