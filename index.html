@@ -5,24 +5,41 @@ main{max-width:720px;margin:auto;padding:16px}.card{background:#fff;border-radiu
 h1{font-size:20px;margin:4px 0 12px}.badge{display:inline-block;padding:3px 10px;border-radius:99px;font-weight:600;color:#fff}
 .rec{background:#d93025;animation:p 1.5s infinite}.end{background:#666}@keyframes p{50%{opacity:.5}}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.k{color:#777;font-size:13px}.v{font-size:18px;font-weight:600}
-.seg{border-left:3px solid #1a73e8;padding:4px 10px;margin:10px 0}.seg small{color:#777}.note{font-size:12px;color:#888}
+.ln{padding:3px 0;border-bottom:1px solid #eee;font-size:15px}button{padding:8px 14px;border:0;border-radius:8px;background:#1a73e8;color:#fff;font-size:15px}.seg{border-left:3px solid #1a73e8;padding:4px 10px;margin:10px 0}.seg small{color:#777}.note{font-size:12px;color:#888}
 a{color:#1a73e8;word-break:break-all}</style></head><body><main>
 <h1>📡 直播逐字稿狀態</h1><div class="card"><div id="st"></div><h2 id="title" style="font-size:16px"></h2><a id="url"></a></div>
 <div class="card grid"><div><div class="k">已錄製</div><div class="v" id="el">–</div></div><div><div class="k">已完成段數</div><div class="v" id="ch">–</div></div>
 <div><div class="k">最後更新（台北時間）</div><div class="v" id="up">–</div></div><div><div class="k">辨識引擎</div><div class="v" id="en" style="font-size:14px">–</div></div></div>
 <div class="card grid"><div><div class="k">新聞稿</div><div class="v" id="pr">–</div></div><div><div class="k">社群貼文</div><div class="v" id="sp">–</div></div></div>
-<div class="card"><b>最新逐字稿</b><div id="mode" class="note"></div><div id="segs"></div></div>
-<p class="note">每 10 秒自動更新</p></main><script>
+<div class="card"><b>最新逐字稿</b><div id="mode" class="note"></div><div id="dl" style="margin:8px 0;display:none"><button onclick="dl('txt')">下載逐字稿 .txt</button> <button onclick="dl('md')">下載 .md</button></div><div id="segs" style="max-height:60vh;overflow-y:auto"></div></div>
+<p class="note">每 10 秒自動更新・內容已加密 <a href="#" onclick="logout()">清除密碼</a></p></main><script>
 let S;const tp=d=>new Date(d).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',hour12:false});
 function el(){if(!S)return;const a=new Date(S.started_at),b=S.ended_at?new Date(S.ended_at):new Date();const m=Math.floor((b-a)/60000);
 document.getElementById('el').textContent=(m>=60?Math.floor(m/60)+' 小時 ':'')+(m%60)+' 分';}
-const RAW='https://raw.githubusercontent.com/mmmarc2025/live-transcript/main/';
-async function get(u){try{const r=await fetch(u+'?t='+Date.now(),{cache:'no-store'});return r.ok?await r.json():null}catch(e){return null}}
-async function load(){const b=Math.floor(Date.now()/10000);const c=await Promise.all([get(RAW+'live/s'+((b-1)%360)+'.json'),get(RAW+'live/s'+((b-2)%360)+'.json'),get(RAW+'live/s'+((b-3)%360)+'.json'),S?null:get('status.json')]);
+const LOCAL=new URLSearchParams(location.search).has('local');const RAW=LOCAL?'local/':'https://raw.githubusercontent.com/mmmarc2025/live-transcript/main/';
+let KEY=null;const b64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+async function mkKey(p,e){const m=await crypto.subtle.importKey('raw',new TextEncoder().encode(p),'PBKDF2',false,['deriveKey']);
+return crypto.subtle.deriveKey({name:'PBKDF2',salt:b64(e.salt),iterations:e.iter,hash:'SHA-256'},m,{name:'AES-GCM',length:256},false,['decrypt']);}
+async function dec(e){return new Uint8Array(await crypto.subtle.decrypt({name:'AES-GCM',iv:b64(e.iv)},KEY,b64(e.ct)));}
+async function unlock(e){for(;;){let p=localStorage.getItem('lt_pass')||prompt('請輸入逐字稿密碼');if(!p)return false;
+try{KEY=await mkKey(p,e);await dec(e);localStorage.setItem('lt_pass',p);return true}catch(x){KEY=null;localStorage.removeItem('lt_pass');alert('密碼錯誤')}}}
+async function get(u){try{const r=await fetch(u+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)return null;const j=await r.json();
+if(!j.enc)return null;if(!KEY&&!(await unlock(j.enc)))return null;const d=JSON.parse(new TextDecoder().decode(await dec(j.enc)));return d}catch(e){return null}}
+async function load(){const b=Math.floor(Date.now()/10000);const first=await get(RAW+'live/s'+((b-1)%360)+'.json')||await get(RAW+'status.json');const c=[first].concat(await Promise.all([get(RAW+'live/s'+((b-1)%360)+'.json'),get(RAW+'live/s'+((b-2)%360)+'.json'),get(RAW+'live/s'+((b-3)%360)+'.json'),get(RAW+'live/s'+((b-4)%360)+'.json')]));
 let best=S;for(const x of c){if(x&&(!best||x.updated_at>best.updated_at))best=x}if(!best)return;S=best;
 const r=S.status==='錄製中';document.getElementById('st').innerHTML=`<span class="badge ${r?'rec':'end'}">${r?'● ':''}${S.status}</span>`;
 title.textContent=S.title||'';url.textContent=S.url;url.href=S.url;ch.textContent=S.chunks+' 段（每段 '+(S.chunk_seconds?S.chunk_seconds+' 秒':S.chunk_minutes+' 分')+'）'+(S.lag_seconds!=null?'・延遲 '+S.lag_seconds+' 秒':'');
 up.textContent=tp(S.updated_at);en.textContent=S.engine||'–';pr.textContent=S.press_release;sp.textContent=S.social_posts;
-mode.textContent=S.public_excerpt_only?'公開頁僅顯示每段摘錄，完整逐字稿保存在錄製端。':'';
-segs.innerHTML=S.segments.slice().reverse().map(s=>`<div class="seg"><small>第 ${s.n} 段・${s.time}</small><div>${(s.text||s.excerpt).replace(/</g,'&lt;').replace(/\n/g,'<br>')}</div></div>`).join('')||'<p class="note">等待第一段…</p>';el();}
+const full=!S.public_excerpt_only&&S.lines;
+mode.textContent=full?'完整模式：顯示最新 100 行，可下載完整逐字稿。':'此為第三方直播，公開頁僅顯示每段簡短摘錄；完整逐字稿僅私下保存，不提供下載。';
+document.getElementById('dl').style.display=full&&S.transcript_file?'block':'none';
+const box=document.getElementById('segs');
+if(full){const atBottom=box.scrollHeight-box.scrollTop-box.clientHeight<40;
+box.innerHTML=S.lines.map(l=>`<div class="ln">${l.replace(/</g,'&lt;')}</div>`).join('');if(atBottom)box.scrollTop=box.scrollHeight;}
+else box.innerHTML=S.segments.slice().reverse().map(s=>`<div class="seg"><small>第 ${s.n} 段・${s.time}</small><div>${s.excerpt.replace(/</g,'&lt;')}</div></div>`).join('')||'<p class="note">等待第一段…</p>';
+el();}
+async function dl(ext){const r=await fetch(RAW+S.transcript_file+'?t='+Date.now(),{cache:'no-store'});let t=new TextDecoder().decode(await dec(await r.json()));
+if(ext==='txt')t=t.replace(/^#+\s*/gm,'');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:'text/plain;charset=utf-8'}));
+a.download=(S.title||S.session_id).replace(/[\\/:*?"<>|]/g,'_').slice(0,60)+'.'+ext;a.click();}
+function logout(){localStorage.removeItem('lt_pass');location.reload()}
 load();setInterval(load,10000);setInterval(el,10000);</script></body></html>
