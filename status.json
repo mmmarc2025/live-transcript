@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:56:14+08:00",
+ "updated_at": "2026-10-13T15:56:24+08:00",
  "chunk_minutes": 0.17,
- "chunks": 44,
+ "chunks": 45,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
-  {
-   "n": 40,
-   "time": "15:55:34",
-   "excerpt": "馬上跟美國求援，拜託美國出兵來轟炸這個胡塞組織，但是川普拒絕了，沒有。"
-  },
   {
    "n": 41,
    "time": "15:55:44",
@@ -34,6 +29,11 @@
    "n": 44,
    "time": "15:56:14",
    "excerpt": "轟炸，這胡塞，胡塞台灣要報復啊，胡塞他就報復用什麼方式報復？"
+  },
+  {
+   "n": 45,
+   "time": "15:56:24",
+   "excerpt": "機場，就直接打你的軟肋，打你最痛的地方。"
   }
  ],
  "press_release": "尚未開始",
