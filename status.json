@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:55:34+08:00",
+ "updated_at": "2026-10-13T15:55:44+08:00",
  "chunk_minutes": 0.17,
- "chunks": 40,
+ "chunks": 41,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
-  {
-   "n": 36,
-   "time": "15:54:52",
-   "excerpt": "九月下學的時候，他突然從他的老巢裡面大舉發動攻勢，攻打葉門政府軍，那這一下子打到…"
-  },
   {
    "n": 37,
    "time": "15:55:04",
@@ -34,10 +29,15 @@
    "n": 40,
    "time": "15:55:34",
    "excerpt": "馬上跟美國求援，拜託美國出兵來轟炸這個胡塞組織，但是川普拒絕了，沒有。"
+  },
+  {
+   "n": 41,
+   "time": "15:55:44",
+   "excerpt": "軍幫忙去打，但葉門政府軍本來就是很散慢的一隻軍隊厚，他號稱十萬，可能搞不好只有一…"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 4
+ "lag_seconds": 3
 }
