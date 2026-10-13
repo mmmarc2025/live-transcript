@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:58:21+08:00",
+ "updated_at": "2026-10-13T15:59:33+08:00",
  "chunk_minutes": 0.17,
- "chunks": 57,
+ "chunks": 64,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
-  {
-   "n": 49,
-   "time": "15:57:00",
-   "excerpt": "的交通的樞紐，剛剛造成很大的影響，但是大家很好奇的一件事情，這個這個胡賽憑什麼，…"
-  },
   {
    "n": 50,
    "time": "15:57:10",
@@ -34,10 +29,15 @@
    "n": 53,
    "time": "15:57:41",
    "excerpt": "掉他改裝多少錢嗎？"
+  },
+  {
+   "n": 59,
+   "time": "15:58:43",
+   "excerpt": "講話。"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 3
+ "lag_seconds": 4
 }
