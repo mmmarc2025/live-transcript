@@ -5,15 +5,20 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:35:06+08:00",
- "updated_at": "2026-10-13T15:35:19+08:00",
+ "updated_at": "2026-10-13T15:37:48+08:00",
  "chunk_minutes": 2,
- "chunks": 1,
- "engine": "Gemini gemini-flash-latest",
+ "chunks": 2,
+ "engine": "faster-whisper (CPU)",
  "segments": [
   {
    "n": 1,
    "time": "15:35",
    "excerpt": "今天是國民政府還都南京的一天。"
+  },
+  {
+   "n": 2,
+   "time": "15:37",
+   "excerpt": "居然他還將完成前代國家的矯盾"
   }
  ],
  "press_release": "尚未開始",
