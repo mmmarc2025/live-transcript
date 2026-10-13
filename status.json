@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:54:12+08:00",
+ "updated_at": "2026-10-13T15:54:22+08:00",
  "chunk_minutes": 0.17,
- "chunks": 32,
+ "chunks": 33,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
-  {
-   "n": 28,
-   "time": "15:53:32",
-   "excerpt": "呃這大概是在2015年的話經過一次協調是停下來的。"
-  },
   {
    "n": 29,
    "time": "15:53:42",
@@ -34,10 +29,15 @@
    "n": 32,
    "time": "15:54:12",
    "excerpt": "就是結婚的移民嘛，裡面裡面打各式各樣的這個事情，那麼當中的話裡面少不了就是說懷疑…"
+  },
+  {
+   "n": 33,
+   "time": "15:54:22",
+   "excerpt": "以前後來裡面黑人黑人啊，不是黑人啊，就是索馬利亞人多到這種程度，可以選上一個議員…"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 3
+ "lag_seconds": 2
 }
