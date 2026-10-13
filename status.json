@@ -1,15 +1,21 @@
 {
- "session_id": "20261013-154857",
- "title": "🔴LIVE：2026.10.13 新聞大白話【14:00全球開播】 2026-10-13 15:48",
+ "session_id": "20261013-154800",
+ "title": "",
  "url": "https://www.youtube.com/live/AG_E_I-mFpk",
  "public_excerpt_only": true,
  "status": "錄製中",
- "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:48:58+08:00",
- "chunk_minutes": 0,
- "chunks": 0,
- "engine": "",
- "segments": [],
+ "started_at": "2026-10-13T15:48:02+08:00",
+ "updated_at": "2026-10-13T15:49:27+08:00",
+ "chunk_minutes": 5,
+ "chunks": 1,
+ "engine": "Gemini gemini-3.1-flash-lite",
+ "segments": [
+  {
+   "n": 1,
+   "time": "15:49",
+   "excerpt": "剛開始的時候看起來反攻是順利的，然後他們就吹噓說他們已經重新奪回失地了。"
+  }
+ ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始"
 }
