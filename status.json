@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:56:24+08:00",
+ "updated_at": "2026-10-13T15:56:34+08:00",
  "chunk_minutes": 0.17,
- "chunks": 45,
+ "chunks": 46,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
-  {
-   "n": 41,
-   "time": "15:55:44",
-   "excerpt": "軍幫忙去打，但葉門政府軍本來就是很散慢的一隻軍隊厚，他號稱十萬，可能搞不好只有一…"
-  },
   {
    "n": 42,
    "time": "15:55:54",
@@ -34,6 +29,11 @@
    "n": 45,
    "time": "15:56:24",
    "excerpt": "機場，就直接打你的軟肋，打你最痛的地方。"
+  },
+  {
+   "n": 46,
+   "time": "15:56:34",
+   "excerpt": "的時候，他每年從那經過的旅客有多少？"
   }
  ],
  "press_release": "尚未開始",
