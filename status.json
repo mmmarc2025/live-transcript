@@ -3,13 +3,14 @@
  "title": "",
  "url": "https://www.youtube.com/watch?v=8-CbuG2iuh0",
  "public_excerpt_only": true,
- "status": "錄製中",
+ "status": "已結束",
  "started_at": "2026-10-13T15:32:08+08:00",
- "updated_at": "2026-10-13T15:32:08+08:00",
+ "updated_at": "2026-10-13T15:32:19+08:00",
  "chunk_minutes": 5,
  "chunks": 0,
  "engine": "",
  "segments": [],
  "press_release": "尚未開始",
- "social_posts": "尚未開始"
+ "social_posts": "尚未開始",
+ "ended_at": "2026-10-13T15:32:19+08:00"
 }
