@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:53:32+08:00",
+ "updated_at": "2026-10-13T15:53:42+08:00",
  "chunk_minutes": 0.17,
- "chunks": 28,
+ "chunks": 29,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
-  {
-   "n": 24,
-   "time": "15:52:54",
-   "excerpt": "所以願叫什麼，非常非常能打，他們那個發言人叫那個葉海亞，每次在講的時候，態度一次…"
-  },
   {
    "n": 25,
    "time": "15:53:06",
@@ -34,10 +29,15 @@
    "n": 28,
    "time": "15:53:32",
    "excerpt": "呃這大概是在2015年的話經過一次協調是停下來的。"
+  },
+  {
+   "n": 29,
+   "time": "15:53:42",
+   "excerpt": "明尼蘇達州選出來的，我在明尼蘇達州做過研究，我比較了解，明尼蘇達州是美國他們那個…"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 4
+ "lag_seconds": 3
 }
