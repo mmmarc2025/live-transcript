@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:56:44+08:00",
+ "updated_at": "2026-10-13T15:56:54+08:00",
  "chunk_minutes": 0.17,
- "chunks": 47,
+ "chunks": 48,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
-  {
-   "n": 43,
-   "time": "15:56:04",
-   "excerpt": "樣的實時轟炸，然後地面叫葉門政府軍去打，但是打到現在，雙方來講目前是屬於殭屍，好…"
-  },
   {
    "n": 44,
    "time": "15:56:14",
@@ -34,10 +29,15 @@
    "n": 47,
    "time": "15:56:44",
    "excerpt": "所以等於是亞洲東南亞要到歐洲去，中間必經的一個這個航站，然後歐洲來講的話，也可能…"
+  },
+  {
+   "n": 48,
+   "time": "15:56:54",
+   "excerpt": "方來都經過這個地方。"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 3
+ "lag_seconds": 2
 }
