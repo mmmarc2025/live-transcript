@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:59:33+08:00",
+ "updated_at": "2026-10-13T16:00:33+08:00",
  "chunk_minutes": 0.17,
- "chunks": 64,
+ "chunks": 70,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
-  {
-   "n": 50,
-   "time": "15:57:10",
-   "excerpt": "到，這個一個機場命中他的航向，還有進中他的飛機，我跟你講，你就知道胡塞真的很厲害…"
-  },
   {
    "n": 51,
    "time": "15:57:21",
@@ -34,10 +29,15 @@
    "n": 59,
    "time": "15:58:43",
    "excerpt": "講話。"
+  },
+  {
+   "n": 70,
+   "time": "16:00:33",
+   "excerpt": "餵你好，歡迎收看新聞大白話，我是韋家齊。"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 4
+ "lag_seconds": 3
 }
