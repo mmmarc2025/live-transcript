@@ -1,32 +1,15 @@
 {
- "session_id": "20261013-153505",
- "title": "國民政府還都對日廣播詞_汪精衞",
- "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/%E5%9C%8B%E6%B0%91%E6%94%BF%E5%BA%9C%E9%82%84%E9%83%BD%E5%B0%8D%E6%97%A5%E5%BB%A3%E6%92%AD%E8%A9%9E_%E6%B1%AA%E7%B2%BE%E8%A1%9E.mp3",
+ "session_id": "20261013-154800",
+ "title": "",
+ "url": "https://www.youtube.com/live/AG_E_I-mFpk",
  "public_excerpt_only": true,
- "status": "已結束",
- "started_at": "2026-10-13T15:35:06+08:00",
- "updated_at": "2026-10-13T15:40:35+08:00",
- "chunk_minutes": 2,
- "chunks": 3,
- "engine": "faster-whisper (CPU)",
- "segments": [
-  {
-   "n": 1,
-   "time": "15:35",
-   "excerpt": "今天是國民政府還都南京的一天。"
-  },
-  {
-   "n": 2,
-   "time": "15:37",
-   "excerpt": "居然他還將完成前代國家的矯盾"
-  },
-  {
-   "n": 3,
-   "time": "15:40",
-   "excerpt": "東、南、西、平、海"
-  }
- ],
+ "status": "錄製中",
+ "started_at": "2026-10-13T15:48:02+08:00",
+ "updated_at": "2026-10-13T15:48:02+08:00",
+ "chunk_minutes": 5,
+ "chunks": 0,
+ "engine": "",
+ "segments": [],
  "press_release": "尚未開始",
- "social_posts": "尚未開始",
- "ended_at": "2026-10-13T15:40:35+08:00"
+ "social_posts": "尚未開始"
 }
