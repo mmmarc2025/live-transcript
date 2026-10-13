@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:52:02+08:00",
+ "updated_at": "2026-10-13T15:52:14+08:00",
  "chunk_minutes": 0.17,
- "chunks": 19,
+ "chunks": 20,
  "engine": "Gemini gemini-3.1-flash-lite",
  "segments": [
-  {
-   "n": 15,
-   "time": "15:51:22",
-   "excerpt": "但是沙特這麼有錢，他應該也可以請傭兵吧，我們來請教葉老師。"
-  },
   {
    "n": 16,
    "time": "15:51:32",
@@ -34,10 +29,15 @@
    "n": 19,
    "time": "15:52:02",
    "excerpt": "這個裡面講講穿了，就是這個沙特根本不耐打。"
+  },
+  {
+   "n": 20,
+   "time": "15:52:14",
+   "excerpt": "15年開始到現在打了11年了，對不對，一點成果都沒有，反而越來越小。"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 5
+ "lag_seconds": 7
 }
