@@ -5,16 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:51:32+08:00",
+ "updated_at": "2026-10-13T15:51:46+08:00",
  "chunk_minutes": 0.17,
- "chunks": 16,
+ "chunks": 17,
  "engine": "Gemini gemini-3.1-flash-lite",
  "segments": [
-  {
-   "n": 12,
-   "time": "15:51:02",
-   "excerpt": "想，誰跟胡塞的地麵部隊進行戰鬥？"
-  },
   {
    "n": 13,
    "time": "15:51:04",
@@ -34,10 +29,15 @@
    "n": 16,
    "time": "15:51:32",
    "excerpt": "是不教武的直接打這個機場，就是沙烏地這個國王的這個機場，裡面兩個國際機場都打，然…"
+  },
+  {
+   "n": 17,
+   "time": "15:51:46",
+   "excerpt": "死亡的人的國籍只有四個沙特的，大部分都是外國的，還包含一個美國公民，巴基斯坦的最…"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 5
+ "lag_seconds": 9
 }
