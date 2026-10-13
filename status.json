@@ -5,9 +5,9 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:35:06+08:00",
- "updated_at": "2026-10-13T15:37:48+08:00",
+ "updated_at": "2026-10-13T15:40:34+08:00",
  "chunk_minutes": 2,
- "chunks": 2,
+ "chunks": 3,
  "engine": "faster-whisper (CPU)",
  "segments": [
   {
@@ -19,6 +19,11 @@
    "n": 2,
    "time": "15:37",
    "excerpt": "居然他還將完成前代國家的矯盾"
+  },
+  {
+   "n": 3,
+   "time": "15:40",
+   "excerpt": "東、南、西、平、海"
   }
  ],
  "press_release": "尚未開始",
