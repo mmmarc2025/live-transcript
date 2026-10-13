@@ -24,7 +24,7 @@ async function dec(e){return new Uint8Array(await crypto.subtle.decrypt({name:'A
 async function unlock(e){for(;;){let p=localStorage.getItem('lt_pass')||prompt('請輸入逐字稿密碼');if(!p)return false;
 try{KEY=await mkKey(p,e);await dec(e);localStorage.setItem('lt_pass',p);return true}catch(x){KEY=null;localStorage.removeItem('lt_pass');alert('密碼錯誤')}}}
 async function get(u){try{const r=await fetch(u+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)return null;const j=await r.json();
-if(!j.enc)return null;if(!KEY&&!(await unlock(j.enc)))return null;const d=JSON.parse(new TextDecoder().decode(await dec(j.enc)));return d}catch(e){return null}}
+if(!j.enc)return null;if(!KEY&&!(await unlock(j.enc)))return null;let pt;try{pt=await dec(j.enc)}catch(x){KEY=null;localStorage.removeItem('lt_pass');if(!(await unlock(j.enc)))return null;pt=await dec(j.enc)}return JSON.parse(new TextDecoder().decode(pt))}catch(e){return null}}
 async function load(){const b=Math.floor(Date.now()/10000);const first=await get(RAW+'live/s'+((b-1)%360)+'.json')||await get(RAW+'status.json');const c=[first].concat(await Promise.all([get(RAW+'live/s'+((b-1)%360)+'.json'),get(RAW+'live/s'+((b-2)%360)+'.json'),get(RAW+'live/s'+((b-3)%360)+'.json'),get(RAW+'live/s'+((b-4)%360)+'.json')]));
 let best=S;for(const x of c){if(x&&(!best||x.updated_at>best.updated_at))best=x}if(!best)return;S=best;
 const r=S.status==='錄製中';document.getElementById('st').innerHTML=`<span class="badge ${r?'rec':'end'}">${r?'● ':''}${S.status}</span>`;
