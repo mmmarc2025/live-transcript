@@ -3,9 +3,9 @@
  "title": "",
  "url": "https://www.youtube.com/live/AG_E_I-mFpk",
  "public_excerpt_only": true,
- "status": "錄製中",
+ "status": "已結束",
  "started_at": "2026-10-13T15:48:02+08:00",
- "updated_at": "2026-10-13T15:49:27+08:00",
+ "updated_at": "2026-10-13T15:49:28+08:00",
  "chunk_minutes": 5,
  "chunks": 1,
  "engine": "Gemini gemini-3.1-flash-lite",
@@ -17,5 +17,6 @@
   }
  ],
  "press_release": "尚未開始",
- "social_posts": "尚未開始"
+ "social_posts": "尚未開始",
+ "ended_at": "2026-10-13T15:49:28+08:00"
 }
