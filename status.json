@@ -5,34 +5,39 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:51:02+08:00",
+ "updated_at": "2026-10-13T15:51:04+08:00",
  "chunk_minutes": 0.17,
- "chunks": 4,
+ "chunks": 13,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
   {
-   "n": 1,
-   "time": "15:49",
-   "excerpt": "內。"
-  },
-  {
-   "n": 2,
-   "time": "15:50",
-   "excerpt": "美國跟胡塞交戰也十幾年了。"
-  },
-  {
-   "n": 3,
+   "n": 9,
    "time": "15:51:02",
-   "excerpt": "胡賽越打越強大，也就是說，胡賽雖然佔的國土面積不大，大概是葉門的不到三分之一，可…"
+   "excerpt": "這個對於很富有的薩特來說的話，他的軍隊可能就做不到了。"
   },
   {
-   "n": 4,
+   "n": 10,
    "time": "15:51:02",
-   "excerpt": "占 70% 左右。"
+   "excerpt": "協防條約嘛。"
+  },
+  {
+   "n": 11,
+   "time": "15:51:02",
+   "excerpt": "斯防衛這個薩特，但是不越界作戰，那也就是說，"
+  },
+  {
+   "n": 12,
+   "time": "15:51:02",
+   "excerpt": "想，誰跟胡塞的地麵部隊進行戰鬥？"
+  },
+  {
+   "n": 13,
+   "time": "15:51:04",
+   "excerpt": "戰爭還能夠繼續下去嗎？"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 92
+ "lag_seconds": 2
 }
