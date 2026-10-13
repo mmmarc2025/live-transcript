@@ -1,1 +1,15 @@
-{"status":"已結束","title":"尚無直播","url":"","started_at":"2026-10-13T15:00:00+08:00","updated_at":"2026-10-13T15:00:00+08:00","chunks":0,"chunk_minutes":5,"segments":[],"press_release":"尚未開始","social_posts":"尚未開始","public_excerpt_only":true}
+{
+ "session_id": "20261013-153206",
+ "title": "",
+ "url": "https://www.youtube.com/watch?v=8-CbuG2iuh0",
+ "public_excerpt_only": true,
+ "status": "錄製中",
+ "started_at": "2026-10-13T15:32:08+08:00",
+ "updated_at": "2026-10-13T15:32:08+08:00",
+ "chunk_minutes": 5,
+ "chunks": 0,
+ "engine": "",
+ "segments": [],
+ "press_release": "尚未開始",
+ "social_posts": "尚未開始"
+}
