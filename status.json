@@ -5,21 +5,11 @@
  "public_excerpt_only": true,
  "status": "錄製中",
  "started_at": "2026-10-13T15:48:58+08:00",
- "updated_at": "2026-10-13T15:56:54+08:00",
+ "updated_at": "2026-10-13T15:57:10+08:00",
  "chunk_minutes": 0.17,
- "chunks": 48,
+ "chunks": 50,
  "engine": "Gemini gemini-3.5-flash-lite",
  "segments": [
-  {
-   "n": 44,
-   "time": "15:56:14",
-   "excerpt": "轟炸，這胡塞，胡塞台灣要報復啊，胡塞他就報復用什麼方式報復？"
-  },
-  {
-   "n": 45,
-   "time": "15:56:24",
-   "excerpt": "機場，就直接打你的軟肋，打你最痛的地方。"
-  },
   {
    "n": 46,
    "time": "15:56:34",
@@ -34,10 +24,20 @@
    "n": 48,
    "time": "15:56:54",
    "excerpt": "方來都經過這個地方。"
+  },
+  {
+   "n": 49,
+   "time": "15:57:00",
+   "excerpt": "的交通的樞紐，剛剛造成很大的影響，但是大家很好奇的一件事情，這個這個胡賽憑什麼，…"
+  },
+  {
+   "n": 50,
+   "time": "15:57:10",
+   "excerpt": "到，這個一個機場命中他的航向，還有進中他的飛機，我跟你講，你就知道胡塞真的很厲害…"
   }
  ],
  "press_release": "尚未開始",
  "social_posts": "尚未開始",
  "chunk_seconds": 10,
- "lag_seconds": 2
+ "lag_seconds": 3
 }
